@@ -15,4 +15,25 @@ exports.createPages = async ({ actions }) => {
     context: {},
     defer: true,
   })
+  createPage({
+    path: "/using-dsg-2",
+    component: require.resolve("./src/templates/using-dsg.js"),
+    context: {},
+    defer: true,
+  })
+
+createPage({
+  path: "/using-dsg-3",
+  component: require.resolve("./src/templates/using-dsg.js"),
+  context: {},
+  defer: true,
+})
+
+createPage({
+  path: "/using-dsg4",
+  component: require.resolve("./src/templates/using-dsg.js"),
+  context: {},
+  defer: true,
+})
 }
+
