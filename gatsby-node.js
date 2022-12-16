@@ -15,4 +15,12 @@ exports.createPages = async ({ actions }) => {
     context: {},
     defer: true,
   })
+
+  for (let index = 0; index < 10000; index++) {
+    createPage({
+      path: `/page-${index}`,
+      component: require.resolve("./src/templates/using-dsg.js"),
+    })
+
+  }
 }
